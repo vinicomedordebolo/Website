@@ -1,0 +1,71 @@
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+importar androidx.room.ColumnInfo;
+importar androidx.room.Entity;
+importar androidx.room.PrimaryKey;
+
+
+@Entity (tableName = "websites")
+
+     site de classe pública {
+
+    @PrimaryKey (autoGenerate = true)
+    @NonNull
+    @ColumnInfo (nome = "webId")
+    private int mId;
+
+    @Nullable
+    @ColumnInfo (nome = "webUrl")
+    private String mUrl;
+
+    private String mTopic;
+
+    site público (@Nullable String url, tópico String, int grade, String creationDate) {
+        mName = url;
+        mStyle = tópico;
+        mScore = nota;
+        mCreationDate = creationDate;
+    }
+
+    public int getId () {
+        return mID;
+    }
+
+    public void setId (int id) {
+        mId = id;
+    }
+
+    public String getUrl () {
+        return mUrl;
+    }
+
+    public void setUrl (URL da string) {
+        mUrl = url;
+    }
+
+    public String getTopic () {
+        retornar mTopic;
+    }
+
+    public void setTopic (tópico String) {
+        mTopic = tópico;
+    }
+
+    public int getGrade () {
+        retornar mGrade;
+    }
+
+    public void setGrade (int grade) {
+        mGrade = nota;
+    }
+
+    public String getCreationDate () {
+        return mCreationDate;
+    }
+
+    public void setCreationDate (String creationDate) {
+        mCreationDate = creationDate;
+    }
+
+    private int mGrade;
+    private String mCreatioDate;
